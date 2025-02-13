@@ -4,8 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    #return redirect("/profile")
-    return render_template("index.html")
+    return redirect("/profile")
 
 @app.route("/profile")
 def profile():
